@@ -58,7 +58,7 @@ class App extends React.Component<any, any> {
 
   async componentDidMount(): Promise<void> {
     const token = await getTokenNotification();
-    if (token != '') this.sendTokenId(token);
+    if (token !== '') this.sendTokenId(token);
 
     const action = (snackbarId: any) => (
       <>

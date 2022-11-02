@@ -5,7 +5,6 @@ import CardIcon from '../static/images/tab/card';
 import CalendarIcon from './../static/images/tab/calendar';
 
 import styled from "styled-components";
-import FolderTab from '../static/images/tab/folder';
 
 
 const ListIcons = styled.main 

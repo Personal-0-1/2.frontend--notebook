@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './static/css/index.css';
 
 
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google';
-import { getUser, parametersToLogin, setLogin, setParameterToLogin } from './helpers/account';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 import TemplateIndex from './views/index/Template';
 
 const router = createBrowserRouter([

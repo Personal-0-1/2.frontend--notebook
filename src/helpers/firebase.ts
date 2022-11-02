@@ -42,7 +42,7 @@ const getTokenNotification = async (setTokenFound?: Function) => {
 
 Notification.requestPermission()
   .then(a => {
-    if (a == "denied") alert("Para usar Notebook es necesario que nos permita notificarte tus recordatorios.")
+    if (a === "denied") alert("Para usar Notebook es necesario que nos permita notificarte tus recordatorios.")
   })
   .finally();
 

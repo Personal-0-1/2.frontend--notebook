@@ -10,7 +10,7 @@ const IsLogin = () => {
     let [user] = useState(getUser());
 
     setParameterToLogin("onSuccess", async (e: any) => { await setLogin(e); window.location.replace(''); });
-    if (JSON.stringify(user) == "{}") GoogleLogin(parametersToLogin);
+    if (JSON.stringify(user) === "{}") GoogleLogin(parametersToLogin);
 
     return true;
 };
