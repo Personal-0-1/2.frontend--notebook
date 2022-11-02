@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=M+PLUS+Rounded+1c:wght@500&family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --background-color: #121418;
+    --background-color-navbar: #1B1F24;
+    --padding-body: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    /* padding: 40px; */
+    height: 100vh;
+}
+
+
+#root {
+    padding: var(--padding-body);
+    height: inherit;
+}
+
+.container {
+    max-width: 1220px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.one-line {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.alert {
+    max-width: 500px;
+}

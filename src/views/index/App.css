@@ -1,0 +1,136 @@
+.MuiFab-primary {
+  background-color: #1c1f24 !important;
+  color: white !important;
+}
+
+.bg-hover {
+  background-color: #1c1f24 !important;
+}
+
+.MuiSpeedDialAction-staticTooltipLabel {
+  font-size: 13px !important;
+  background: #1d1f24 !important;
+  color: white !important;
+  direction: rtl;
+  white-space: nowrap;
+  padding: 6px 15px !important;
+}
+
+#root .MuiSpeedDial-root {
+  bottom: var(--padding-body);
+  right: 32px;
+}
+
+.off-canvas .MuiDrawer-paper {
+  max-width: 40vw;
+  width: 100%;
+  min-width: 560px;
+
+  display: grid;
+  grid-template-rows: 59px 1fr 67px;
+}
+
+.off-canvas .title {
+  font-family: 'Poppins';
+  font-weight: 400;
+  text-align: center;
+  padding: 15px;
+}
+
+.off-canvas .header, .off-canvas .footer {
+  background-color: transparent;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.off-canvas .footer {
+  height: 100%;
+  border-radius: 5px 5px 0px 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.off-canvas .footer button {
+  margin: auto;
+  width: 125px;
+  font-size: 13px;
+  text-transform: capitalize;
+  border-radius: 8px;
+}
+
+
+
+.off-canvas .title::before {
+  content: "";
+}
+
+.form-group {
+  display: grid;
+  max-width: 90%;
+  width: 100%;
+  gap: 25px;
+  align-items: center;
+  margin: 22px auto;
+
+  height: fit-content;
+}
+
+.form-control > div {
+  border-radius: 10px;
+}
+
+.list-chips {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.list-chips .chip {
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+.group-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.group-form > div {
+  width: 100%;
+}
+
+.form-icon {
+  position: relative;
+}
+
+.form-icon > div {
+  width: 100%;
+}
+
+.form-icon > svg {
+  position: absolute;
+  right: 15px;
+  bottom: 18px;
+  cursor: pointer;
+}
+
+.input-vencimiento > div {
+  width: 100%;
+}
+
+
+.SnackbarItem-action button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: #e00000;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 13px;
+  margin-right: 13px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,145 @@
+@media screen and (max-width: 1200px) {
+    :root {
+        --padding-body: 28px
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .dashboard-background {
+        background-position-x: 61% !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .note-section {
+        grid-template-columns: 1fr !important;
+    }
+
+    .container-group-list {
+        display: none;
+    }
+
+    .header h1 {
+        font-size: 24px !important;
+    }
+
+    .header .info p {
+        font-size: 14px !important;
+    }
+
+    .header .info img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .card-info-note h3 {
+        font-size: 24px !important;
+    }
+
+    .card-info-note p {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 18px !important;
+    }
+
+    .card-info-note h3 {
+        font-size: 22px !important;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .view-main {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 100% 65px;
+    }
+
+    .list-note {
+        justify-content: center;
+    }
+    
+    .navbar {
+        grid-row: 2/2;
+    
+        padding: 0 !important;
+        height: 65px !important;
+
+        position: fixed;
+        bottom: 12px;
+        width: calc(100% - var(--padding-body) - var(--padding-body)) !important;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .navbar > div {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .dashboard-background {
+        background-size: 228%;
+        background-position-x: 0 !important;
+        justify-content: center;
+        padding-left: 0 !important;
+    }
+
+
+    #root .MuiSpeedDial-root {
+        right: calc(var(--padding-body) + 29px) !important;
+        bottom: 53px !important;
+    }
+    
+    #root .MuiSpeedDial-root button {
+        background-color: #3a7575 !important;
+    }
+
+    .off-canvas .MuiDrawer-paper {
+        max-width: none;
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .list-note {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .list-note > div {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .list-note {
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+    }
+
+    .list-note > div {
+        max-width: 380px;
+    }
+
+    .dashboard-background {
+        background-size: 300%;
+    }
+}
+
+
+@media screen and (max-width: 464px) {
+    .dashboard-background {
+        flex-wrap: wrap;
+        padding: 16px;
+        padding-left: 16px !important;
+        height: min-content !important;
+
+        background-size: 500%;
+    }
+}
