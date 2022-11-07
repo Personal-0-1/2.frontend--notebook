@@ -4,6 +4,7 @@ import { getAnalytics } from "firebase/analytics";
 
 import { getDownloadURL, getStorage, ref as refFire, uploadBytes } from "firebase/storage";
 import { getMessaging, getToken } from "firebase/messaging";
+import { getUser } from "./account";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDNuTSKf2HS9V-Po2f1GzAo8oUcfHna6qc",
@@ -40,11 +41,13 @@ const getTokenNotification = async (setTokenFound?: Function) => {
   return currentToken;
 }
 
-Notification.requestPermission()
-  .then(a => {
-    if (a === "denied") alert("Para usar Notebook es necesario que nos permita notificarte tus recordatorios.")
-  })
-  .finally();
+if (JSON.stringify(getUser()) != "{}") {
+  Notification.requestPermission()
+    .then(a => {
+      if (a === "denied") alert("Para usar Notebook es necesario que nos permita notificarte tus recordatorios.")
+    })
+    .finally();
+}
 
 
 
