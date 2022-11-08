@@ -41,7 +41,7 @@ const getTokenNotification = async (setTokenFound?: Function) => {
   return currentToken;
 }
 
-if (JSON.stringify(getUser()) != "{}") {
+if (JSON.stringify(getUser()) !== "{}") {
   Notification.requestPermission()
     .then(a => {
       if (a === "denied") alert("Para usar Notebook es necesario que nos permita notificarte tus recordatorios.")
