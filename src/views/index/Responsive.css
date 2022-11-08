@@ -68,14 +68,17 @@
         padding: 0 !important;
         height: 65px !important;
 
-        position: fixed;
+        position: fixed !important;
+        z-index: 2;
         bottom: 12px;
-        width: calc(100% - var(--padding-body) - var(--padding-body)) !important;
+        width: calc(100% - var(--padding-body)) !important;
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-items: center;
         justify-items: center;
+
+        left: calc(var(--padding-body) / 2);
     }
 
     .navbar > div {
@@ -92,7 +95,8 @@
 
 
     #root .MuiSpeedDial-root {
-        right: calc(var(--padding-body) + 29px) !important;
+        position: fixed;
+        right: calc(var(--padding-body) + 10px) !important;
         bottom: 53px !important;
     }
     
@@ -103,6 +107,10 @@
     .off-canvas .MuiDrawer-paper {
         max-width: none;
         min-width: 100%;
+    }
+
+    .note-section {
+        padding-bottom: 98px;
     }
 }
 

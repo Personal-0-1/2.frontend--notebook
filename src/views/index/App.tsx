@@ -81,7 +81,6 @@ class App extends React.Component<any, any> {
     const user = getUser();
     if (JSON.stringify(user) === "{}") return;
 
-
     await axios.post(`${process.env.REACT_APP_API}/UserToken/SaveToken/${user.internalId}/${tokenId}`);
   }
   
